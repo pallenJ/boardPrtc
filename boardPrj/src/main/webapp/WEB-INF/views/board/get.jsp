@@ -102,10 +102,10 @@ $(document).ready(function () {
 				<button data-oper="list" class="btn btn-info">List</button>				
 				<form id = "operForm" action="/board/modify" method="get">
 					<input type="hidden" id = "bno" name ="bno" value ='<c:out value="${board.bno}"></c:out>'>
-<%-- 					<input type="hidden" id = "pageNum" name ="pageNum" value ='<c:out value="${param.pageNum}"></c:out>'>
+					<input type="hidden" id = "pageNum" name ="pageNum" value ='<c:out value="${param.pageNum}"></c:out>'>
 					<input type="hidden" id = "amount" name ="amount" value ='<c:out value="${param.amount}"></c:out>'>
 					<input type="hidden" id = "type" name ="type" value ='<c:out value="${param.type}"></c:out>'>
-					<input type="hidden" id = "keyword" name ="keyword" value ='<c:out value="${param.keyword}"></c:out>'> --%>
+					<input type="hidden" id = "keyword" name ="keyword" value ='<c:out value="${param.keyword}"></c:out>'>
 				</form>
 				
 			</div>

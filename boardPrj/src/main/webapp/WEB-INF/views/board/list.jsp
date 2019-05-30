@@ -193,8 +193,11 @@ $(document).ready(
 		
 		);
 		var searchForm = $("#searchForm")
-		searchForm.find("[name=type]").val("${param.type}")
+		var type = "${param.type}";
+		if(type == ''){type="TWC"}
+		searchForm.find("[name=type]").val(type)
 		searchForm.find("[name=keyword]").val("${param.keyword}")
+		
 		  
 });
 </script>
